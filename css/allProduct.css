@@ -1,0 +1,15 @@
+.hidden {
+    display: none; 
+}
+.toggle h4 {
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: inline-block; 
+    padding: 5px 150px; 
+    cursor: pointer; 
+}
+
+.toggle h4:hover  {
+    background-color: #3AA9FF;
+    color: white;
+} 

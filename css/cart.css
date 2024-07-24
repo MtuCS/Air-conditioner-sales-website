@@ -1,0 +1,60 @@
+.cart {
+    background-color: white;
+}
+main{
+    padding: 70px 0;
+    background: url(../img/signbackgr.jpg);
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* CSS */
+@keyframes pulse {
+    0% { background-color: #4FC0FF; }
+    50% { background-color: #2E8B57; }
+    100% { background-color: #4FC0FF; }
+}
+
+.main-button {
+    background-color: #4FC0FF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    animation: pulse 2s infinite; 
+    margin-left: 600px; 
+
+}
+
+.main-button:hover {
+    animation-play-state: paused; 
+}
+.cart__list img {
+    max-width: 120px;
+    height: auto;
+}
+
+.cart__list td {
+    vertical-align: middle;
+}
+.table thead th,
+.table tbody td {
+    vertical-align: middle;
+}
+
+button {
+    background-color: #dc3545;
+    color: #fff; 
+    border: none;
+    padding: 8px 16px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: #c82333; 
+}

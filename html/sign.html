@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="icon" type="image/x-icon" href="../img/img_web.png">
+    <link rel="stylesheet" href="../css/sign.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrapCSS/all.css">
+    <link rel="stylesheet" href="../css/bootstrapCSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrapCSS/all.min.css">
+    <script src="../js/bootstrapJS/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="../js/bootstrapJS/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrapJS/all.min.js"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/J5f5jU1wFzgW6xZI6loz7Cće/T3WR6XJ5zQ6Al"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/Home.css">
+    <link rel="stylesheet" href="../css/allProduct.css">
+    <script src="../js/scrollupbtn.js"></script>
+    <script src="../js/bootstrapJS/button_submit.js"></script>
+    <script src="../js/click_dropdown.js"></script>
+    <script src="../js/active_section.js"></script>
+    <script src="../js/script.js"></script>
+
+    <link rel="stylesheet" href="../fontawesome-free-6.5.1-web/css/all.min.css">
+</head>
+
+<body>
+    <div class="header-container"></div>
+    <script src="../js/header.js"></script>
+    <main>
+        <div class="container h-100 d-flex align-items-center justify-content-center">
+            <div class="form w-50 mx-auto bg-white">
+                <div class="form-header mb-4">
+                    <h3 class="text-uppercase text-center fw-semibold mb-3 text-main">Đăng ký</h3>
+                </div>
+                <div class="form-body mb-4">
+                    <form id="register-form" action="#" method="post" class="d-flex flex-column gap-4">
+                        <div>
+                            <input type="text" name="reg_name" id="ten" class="form-control form-input rounded-0" placeholder="Họ và tên">
+                            <span id="nameError" class="text-red text-12 fw-medium"></span>
+                        </div>
+                        <div>
+                            <input type="tel" name="reg_phone" id="sdt" class="form-control form-input rounded-0" placeholder="Số điện thoại">
+                            <span id="phoneError" class="text-red text-12 fw-medium"></span>
+                        </div>
+                        <div>
+                            <input type="password" name="reg_password" id="password" class="form-control form-input rounded-0" placeholder="Mật khẩu">
+                            <span id="passError" class="text-red text-12 fw-medium"></span>
+                        </div>
+                        <div>
+                            <input type="password" name="reg_confirm_password" id="repassword" class="form-control form-input rounded-0" placeholder="Nhập lại mật khẩu">
+                            <span id="repassError" class="text-red text-12 fw-medium"></span>
+                        </div>
+                        <div>
+                            <input type="submit" class="main-button fw-semibold text-20 mb-3" value="Đăng ký">
+                        </div>
+                    </form>
+                </div>
+                <div class="form-footer">
+                    <div class="flex justify-content-center">
+                        <span class="alter">Hoặc đăng ký bằng</span>
+                        <hr class="alter-line position-relative m-0 mb-4">
+                    </div>
+                    <div class="d-flex justify-content-center gap-4 mb-5">
+                        <img class="social-btn" src="../img/login/google.svg" alt="">
+                        <img class="social-btn" src="../img/login/facebook.svg" alt="">
+                    </div>
+                    <div class="log_in">
+                        <p class="fw-semibold text-center">Đã có tài khoản? <a href="./login.html" class="text-main">Đăng nhập ngay</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        $(document).ready(function() {
+    $('#register-form').submit(function(event) {
+        event.preventDefault();
+
+        var name = $('#ten').val();
+        var phoneNumber = $('#sdt').val();
+        var password = $('#password').val();
+        var confirmPassword = $('#repassword').val();
+        if (name.trim() === '' || phoneNumber.trim() === '' || password.trim() === '' || confirmPassword.trim() === '') {
+            alert('Vui lòng điền đầy đủ thông tin.');
+            return;
+        }
+        if (password !== confirmPassword) {
+            alert('Mật khẩu nhập lại không khớp.');
+            return;
+        }
+        var userData = {
+            name: name,
+            phoneNumber: phoneNumber,
+            password: password
+        };
+        localStorage.setItem('userData', JSON.stringify(userData));
+
+        alert('Đăng ký thành công!');
+        window.location.href = './login.html';
+    });
+});
+
+    </script>   
+    
+</body>
+
+</html>

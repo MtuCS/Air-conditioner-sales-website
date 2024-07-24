@@ -1,0 +1,60 @@
+<!-- OtherPage.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/bootstrapCSS/all.css">
+    <link rel="stylesheet" href="../css/bootstrapCSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrapCSS/all.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+    <div class="header-container"></div>
+    <script src="../js/header.js"></script>
+    <main>
+        <div class="container cart">
+            
+            <section class="container cart py-5" id="js-cart">
+                <div class="row" id="js-cart-show">
+                    <div class="product">
+                        <div class="product__header d-flex align-items-end gap-2">
+                            <h4 class="product__heading mb-0">GIỎ HÀNG</h4>
+                        </div>
+                        <div class="product__list">
+                            <table class="table cart__list">
+                                <thead>
+                                    <tr>
+                                        <th class="col col-6">Sản phẩm</th>
+                                        <th class="col col-2 text-center">Đơn giá</th>
+                                        <th class="col col-2 text-center">Số lượng</th>
+                                        <th class="col col-2 text-end">Tổng tiền</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="js-cart-list">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-4">
+                        <div class="sub-total" id="sub-total">
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <div class="d-flex align-items-center justify-content-between text-14 fw-semibold bg-white p-2 py-3 rounded-2 mb-2" id="total-amount">
+                <p class="m-0">Tổng đơn hàng (Tạm tính) :</p>
+                <span class="text-main text-20" id="total-amount-value"></span>
+            </div>
+            <button class="main-button fixed-end mb-4 me-4" id="place-order-button">Đặt hàng</button>
+        </div>
+    </main>
+    <script src="../js/cart.js"></script>
+    <div class="footer-container"></div>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

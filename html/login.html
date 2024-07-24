@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="icon" type="image/x-icon" href="../img/img_web.png">
+    <link rel="stylesheet" href="../css/sign.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../fontawesome-free-6.5.1-web/css/all.min.css">    
+    <link rel="stylesheet" href="../css/bootstrapCSS/all.css">
+    <link rel="stylesheet" href="../css/bootstrapCSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrapCSS/all.min.css">
+    <script src="../js/log_name.js"></script>
+    <script src="../js/bootstrapJS/jquery.min.js"></script>
+    <script src="../js/bootstrapJS/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrapJS/all.min.js"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/J5f5jU1wFzgW6xZI6loz7Cće/T3WR6XJ5zQ6Al"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/Home.css">
+</head>
+<body>
+    <header class=""> 
+        <div class="container">
+            <div class="row align-items-center justify-content-between text-center">
+                <div class="col-lg-2 col-md-auto col-sm-auto">
+                    <ul class="nav">
+                        <li>
+                            <a class=" fw-bold" href="../html/home.html">
+                                <img src="../img/logo.png" alt="" height="90px">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <ul class="nav">
+                        <li>
+                            <form id="search-box" class="d-flex">
+                                <input class="form-control me-2" type="text" id="search-text" placeholder="Bạn muốn tìm gì?" size="30px">
+                                <button id="search-btn" class="btn" type="button" onclick="searchData()">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <ul class="nav">
+                        <li>
+                            <div id="qc" style="text-align: center;color: #4FC0FF; font-size: larger;">
+                                <big><b style="font-size: large;">Bảo hành chính hãng</b></big>
+                                <p>tận nơi toàn quốc</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center">
+                    <ul class="nav">
+                        <li>
+                            <div>
+                                <a href="#"><img src="../img/giohang.png" alt="Giỏ hàng" width="140px"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 d-flex justify-content-center align-items-center">
+                    <ul class="nav">
+                        <li>
+                            <img style="margin-right: -30px; float: left;" src="../img/loho.jpg" width="50px">
+                            <ul style="margin-left: 30px;">
+                                <li>
+                                    <a style="color: #4FC0FF;" href="tel:0999 333 666">0999 333 666</a>
+                                </li>
+                                <li>
+                                    <a style="color: #4FC0FF;" href="tel:0888 333 666"> 0888 333 666 <br></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center">
+                    <div class="user-account nav">
+                        <a href="#"><img src="../img/hoidap_bovoicongdan.png" alt="Tài khoản" width="60px"></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-info justify-content-center ">
+            <div class="container-fluid container ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-nav">
+                        <ul class="navbar-nav nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a href="../html/home.html">Trang chủ</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a href="../html/allProduct.html">Máy lạnh</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Bảng giá</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dịch vụ
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item-nav" href="#">Sửa chữa máy lạnh</a></li>
+                                    <li><a class="dropdown-item-nav" href="#">Bảo trì máy lạnh</a></li>
+                                    <li><a class="dropdown-item-nav" href="#">Bảo hành máy lạnh</a></li>
+                                    <li><a class="dropdown-item-nav" href="#">CSKH</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Về chúng tôi</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container h-100 d-flex align-items-center justify-content-center">
+            <div class="form w-50 mx-auto bg-white">
+                <div class="form-header mb-4">
+                    <h3 class="text-uppercase text-center fw-semibold mb-3 text-main">Đăng nhập</h3>
+                </div>
+                <div class="form-body mb-4">
+                    <form id="login-form" action="#" method="post">
+                        <div class="form-group">
+                            <input type="tel" id="reg_phone" name="reg_phone" required placeholder="Nhập số điện thoại">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="password" name="password" required placeholder="Nhập mật khẩu">
+                        </div>
+                        <div class="form-group">
+                            <button class="main-button fw-semibold text-20 mb-3" id="login-btn">Đăng nhập</button>
+                        </div>
+                    </form>
+                    <span class="username"></span>
+                </div>
+                <div class="form-footer">
+                    <div class="flex justify-content-center">
+                        <span class="alter">Hoặc đăng nhập bằng</span>
+                        <hr class="alter-line position-relative m-0 mb-4">
+                    </div>
+                    <div class="d-flex justify-content-center gap-4 mb-5">
+                        <img class="social-btn" src="../img/login/google.svg" alt="">
+                        <img class="social-btn" src="../img/login/facebook.svg" alt="">
+                    </div>
+                    <div class="sign_up">
+                        <p class="fw-semibold text-center">Bạn chưa có tài khoản? <a href="./sign.html">Đăng ký ngay</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main><hr>
+    <script>
+        $(document).ready(function() {
+    $('#login-form').submit(function(event) {
+        event.preventDefault();
+        var phoneNumber = $('#reg_phone').val();
+        var password = $('#password').val();
+
+        // Lấy dữ liệu người dùng từ localStorage
+        var storedUserData = localStorage.getItem('userData');
+        if (!storedUserData) {
+            alert('Tài khoản không tồn tại. Vui lòng đăng ký trước.');
+            return;
+        }
+
+        // Chuyển đổi dữ liệu từ chuỗi JSON về đối tượng JavaScript
+        var userData = JSON.parse(storedUserData);
+
+        // Kiểm tra thông tin đăng nhập
+        if (phoneNumber === userData.phoneNumber && password === userData.password) {
+            alert('Đăng nhập thành công!');
+            window.location.href = "./home.html";
+        } else {
+            alert('Số điện thoại hoặc mật khẩu không chính xác. Vui lòng thử lại.');
+        }
+    });
+});
+
+    </script>
+    
+</body>
+</html>
